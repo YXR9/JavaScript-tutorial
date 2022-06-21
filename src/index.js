@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Scope from './variables/scope';
-import ScopeChain from './variables/scope_chain';
+import Scope from './variables/01 scope';
+import ScopeChain from './variables/02 scope_chain';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
