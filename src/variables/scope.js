@@ -41,8 +41,8 @@
 // iAm();  // ruru
 // console.log(me);    // me is not defined
 
-{
-    var me = 'ruru';
-    console.log(me);    // ruru
-}
-console.log(me);    // ruru
+// {
+//     var me = 'ruru';
+//     console.log(me);    // ruru
+// }
+// console.log(me);    // ruru
