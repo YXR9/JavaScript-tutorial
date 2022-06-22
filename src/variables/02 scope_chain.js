@@ -1,26 +1,26 @@
 //// 範圍鏈 Scope Chain ////
 // 範例一
 // 宣告 place 為 ruru1
-var place = '網學所';
+// var place = '網學所';
 
-// 呼叫 a()
-a()
+// // 呼叫 a()
+// a()
 
-// 呼叫 b()
-b()
+// // 呼叫 b()
+// b()
 
-function a() {
-    // 宣告 place 為 路上
-    var place = '路上';
+// function a() {
+//     // 宣告 place 為 路上
+//     var place = '路上';
 
-    // 呼叫 b()
-    b();
-}
+//     // 呼叫 b()
+//     b();
+// }
 
-function b() {
-    // 印出 place
-    console.log('我在', place);
-}
+// function b() {
+//     // 印出 place
+//     console.log('我在', place);
+// }
 
 // A. undefined ： 因為變數 place 在 function b 裡面沒有被宣告過
 // B. 我在路上 ：因為 function a 裡面已經宣告新的 place 的值，然後再呼叫 function b
@@ -46,18 +46,18 @@ function b() {
 
 
 // 範例二
-let myPokémon = '皮卡丘';
+// let myPokémon = '皮卡丘';
 
-function battle() {
-    let myPokémon = '閃電鳥';
-    function sayHi() {
-        let myPokémon = '快龍';
-        console.log('你好挖~ ' + myPokémon);
-    }
-    sayHi();
-}
+// function battle() {
+//     let myPokémon = '閃電鳥';
+//     function sayHi() {
+//         let myPokémon = '快龍';
+//         console.log('你好挖~ ' + myPokémon);
+//     }
+//     sayHi();
+// }
 
-battle();
+// battle();
 
 
 
