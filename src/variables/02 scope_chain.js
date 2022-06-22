@@ -1,6 +1,6 @@
 //// 範圍鏈 Scope Chain ////
 // 範例一
-// 宣告 place 為 ruru1
+// 宣告 place 為 '網學所'
 // var place = '網學所';
 
 // // 呼叫 a()
