@@ -2,3 +2,4 @@
  - JavaScript Scope
  - Scope Chain
  - Hoisting
+ - Closure
