@@ -113,12 +113,12 @@
 // 前言 - JavaScript 在 ES6 let 和 const 問世之前，都是用 var 來定義變數，但是 var 有許多迥異於其他程式語言的特性，
 // 像是使用函式作用域，以及具有變數 hoisting 的規則，對於初學者而言非常容易搞錯。
 
-function printName() {
-    name = "Amy";
-    console.log(name); // Amy
-    var name;
-}
-printName();
+// function printName() {
+//     name = "Amy";
+//     console.log(name); // Amy
+//     var name;
+// }
+// printName();
 
 // 案例：把宣告 name 放在不會被執行到的 if 裡面
 // function printName() {
@@ -128,6 +128,7 @@ printName();
 //     }
 //     console.log(name);   // 會有咚咚嗎？
 // }
+// printName()
 
 // 結論 - 只要有宣告 var 變數，則不管先使用或是先宣告，都是合法的。反之，如果完全沒有宣告，就會有錯誤。
 // 如果是 ES6 let 或 const，就一定要先宣告才能使用。
@@ -144,9 +145,9 @@ printName();
 
 // 案例：
 // function printName() {
-//     console.log(name); // undefined → 因為我們沒有給他初始值。
+//     console.log(name); // 會有咚咚嗎？
 //     var name = "John";
-//     console.log(name); // John
+//     console.log(name); // 會是什麼呢？
 // }
 // printName();
 
@@ -155,24 +156,12 @@ printName();
 // 上面的案例程式碼等同於：
 // function printName() {
 //     var name;
-//     console.log(name); // undefined
+//     console.log(name); // 會有咚咚嗎？
 //     name = "John";
-//     console.log(name); // John
+//     console.log(name); // 會是什麼呢？
 // }
 // printName();
 
 // 函式的 hoisting
 // 為什麼函式要有 hoisting? 這樣做的好處是，你可以在呼叫函式前使用它。
 // 優點：這個特性可以解決一個問題，也就是兩個函數需要互相呼叫彼此的狀態，也就是 A() 裡面會呼叫到 B()，而 B() 裡面會呼叫的 A() 的遞迴狀況。
-
-// 案例：
-// function isEven(n) {
-//     if (n === 0) return true;
-//     // return isOdd(n - 1);
-//   }
-  
-// function isOdd(n) {
-//     if (n === 0) return false;
-//     // return isEven(n - 1);
-// }
-// isEven(10); // true

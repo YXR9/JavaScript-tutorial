@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import Scope from './variables/01 scope';
 import ScopeChain from './variables/02 scope_chain';
+import Hoisting from './variables/03 hoisting';
+import Closure from './variables/04 closure';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
