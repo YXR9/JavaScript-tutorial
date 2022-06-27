@@ -3,3 +3,5 @@
  - Scope Chain
  - Hoisting
  - Closure
+ - Prototype
+ - This
