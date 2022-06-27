@@ -6,6 +6,7 @@ import Scope from './variables/01 scope';
 import ScopeChain from './variables/02 scope_chain';
 import Hoisting from './variables/03 hoisting';
 import Closure from './variables/04 closure';
+import Prototype from './variables/05 prototype';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
